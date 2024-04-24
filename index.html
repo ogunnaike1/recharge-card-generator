@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="div-welcome">Welcome...Load your recharge card</div>
+    <div class="div-main">
+        <div class="div-right">
+            <div class="div-container">
+                <span>Choose Network</span>
+            <select name="" id="SelectOption" class="select-network">
+                <option value="MTN">MTN</option>
+                <option value="GLO">GLO</option>
+                <option value="AIRTEL">AIRTEL</option>
+                <option value="Etisalat">Etisalat</option> 
+            </select>
+            <span>Choose Amount</span>
+            <input type="number" class="input-amount" id="inputValue">
+            <span>Pin Generated</span>
+            <input type="number" class="input-amountEntered" id="amountDisplay" readonly>
+            <div class="div-button">
+                <button class="button-generatePin" onclick=" generatedAmount()">Generate Pin</button>
+                <button class="button-savePin" onclick="clearGeneratedAmount()">Save Pin</button>
+            </div>
+
+                
+        </div>
+    </div>
+        <div class="div-left">
+            <input type="text" id="rechargePin" class="input-pinCard">
+            <button class="button-rechargeCard"  onclick="rechargeCard()">RECHARGE CARD</button>
+
+        </div>
+    </div>
+
+    <div class="div-historyHeading">HISTORY</div>
+
+    <div class="div-table">
+        <table class="table" id="rechargeTable">
+            <!-- <tr>
+              <th>S/N</th>
+              <th>NETWORK PROVIDER</th>
+              <th>DATE PRINTED</th>
+              <th>AMOUNT</th>
+              <th>PIN</th>
+              <th>PRINTREF</th>
+              <th>STATUS</th>
+              <th>DELETE</th>
+            </tr> -->
+          </table>
+    </div>
+   <div id="dotrial">
+
+   </div>
+  
+    
+</body>
+<script src="./javascript.js"></script>
+</html>
